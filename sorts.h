@@ -5,7 +5,6 @@
 #include "sort_helper.h"
 
 
-
 // =============== Sort Function ===============
 // Name: bubblesort
 // Desc: O(n^2) comparison sort
@@ -19,9 +18,15 @@
 //           be modified to store a sorted array of size.
 void bubbleSortIntegers(int *array, unsigned int size, int print)
 {
-   // TODO implement
+   int i, j;
+   for (i = 0; i<size-1;++i){
+    for(j = 0; j < size-i-1; ++j){
+        if (compare((array+j), (array+j+1)) > 0){
+            swap((array+j), (array+j+1));
+        }
+    }
+   }
 }
-
 
 // provided code 
 

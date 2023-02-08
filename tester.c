@@ -15,9 +15,9 @@ void (*sorts[])(int *, unsigned int, int) = {
 int* get_random_array(int size) {
     // Allocate memory
     int *random = (int *)malloc(sizeof(int) * size);
-
+    int i;
     // Populate our test data set
-    for (int i = 0; i < size; i++)
+    for (i = 0; i < size; i++)
     {
         // Generate random values from 0 to 99
         random[i] = rand() % size;
